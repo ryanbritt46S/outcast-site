@@ -169,17 +169,22 @@ color:#7fc4ff;
 }
 
 .instagram-frame-wrap{
-background:white;
-border-radius:14px;
-padding:18px;
-box-shadow:0 10px 24px rgba(13,34,56,.08);
+  background:white;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 10px 24px rgba(13,34,56,.08);
+  max-width:1000px;
+  margin:0 auto;
 }
 
 .lightwidget-widget{
-width:100%;
-min-height:850px;
-border:0;
-overflow:hidden;
+  width:100%;
+  border:0;
+  overflow:hidden;
+  display:block;
+  min-height:420px;
+  height:420px;
+  background:white;
 }
 
 .booking-box{
@@ -249,10 +254,25 @@ font-size:28px;
 height:700px;
 }
 
-.lightwidget-widget{
-min-height:650px;
 }
 
+@media (min-width: 769px){
+  .lightwidget-widget{
+    min-height:720px;
+    height:720px;
+  }
+}
+
+@media (max-width: 768px){
+  .instagram-frame-wrap{
+    padding:10px;
+    border-radius:14px;
+  }
+
+  .lightwidget-widget{
+    min-height:380px;
+    height:380px;
+  }
 }
 
 </style>
